@@ -27,7 +27,7 @@
                   {{ $user->name ?? 'Guest' }}
                 </p>
                 <p class="text-sm font-medium text-gray-900 truncate dark:text-gray-300" role="none">
-                  neil.sims@flowbite.com
+                  {{ $user->email ?? ''}}
                 </p>
               </div>
               <ul class="py-1" role="none">

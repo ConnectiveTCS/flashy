@@ -1,5 +1,6 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
+import { text } from 'express';
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -11,6 +12,13 @@ export default {
 
     theme: {
         extend: {
+
+            darkMode: {
+                class: 'dark',
+                textColor: 'text-white',
+                backgroundColor: 'bg-black',
+            },
+
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },

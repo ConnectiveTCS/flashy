@@ -24,7 +24,7 @@
             @include('layouts.navigation')
 
             <!-- Page Content -->
-            <main class="w-full">
+            <main class="w-full mt-12">
                 {{ $slot }}
             </main>
         </div>
