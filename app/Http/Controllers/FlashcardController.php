@@ -55,7 +55,8 @@ class FlashcardController extends Controller
         $flashcard->is_correct = $request->has('is_correct');
         $flashcard->is_incorrect = $request->has('is_incorrect');
         $flashcard->save();
-        return redirect()->route('flashcards.index')->with('success', 'Flashcard created successfully.');
+        dd($flashcard);
+        return redirect()->back()->with('success', 'Flashcard created successfully.');
     }
 
     /**
