@@ -45,9 +45,11 @@
                                 Cards</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Add
-                                Cards</a>
+                            <button data-modal-target="popup-modal" data-modal-toggle="popup-modal"
+                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                                type="button">
+                                Add Cards
+                            </button>
                         </li>
                         <li>
                             <a href="#"
@@ -58,8 +60,9 @@
                 </li>
                 <li>
                     <button
-                        class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" data-tabs-target="#styled-papers" type="button"
-                        role="tab" aria-controls="papers" aria-selected="false">
+                        class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                        data-tabs-target="#styled-papers" type="button" role="tab" aria-controls="papers"
+                        aria-selected="false">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
                             fill="#6b7280">
                             <path

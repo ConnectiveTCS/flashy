@@ -53,7 +53,7 @@ class FlashcardSeeder extends Seeder
             ]);
         }
         
-        Flashcard::factory(50)->create()->each(function ($flashcard) {
+        Flashcard::factory(10)->create()->each(function ($flashcard) {
             $flashcard->user()->associate(User::inRandomOrder()->first());
             $flashcard->module()->associate(Module::inRandomOrder()->first());
             $flashcard->topic()->associate(Topic::inRandomOrder()->first());

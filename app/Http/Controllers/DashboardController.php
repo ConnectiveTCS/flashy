@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use \App\Models\Module;
+use \App\Models\Topic;
+use App\Models\Flashcard;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -16,10 +19,16 @@ class DashboardController extends Controller
         //
         // Auth User
         $user = Auth::user()->id;
+        $flashcards = Flashcard::all();
+        $modules = Module::all();
+        $topics = Topic::all();
 
         // return compact
         return view('dashboard', [
             'user' => $user,
+            'flashcards' => $flashcards,
+            'modules' => $modules,
+            'topics' => $topics,
         ]);
 
     }

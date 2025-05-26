@@ -20,7 +20,7 @@
     </head>
     <body class="font-sans antialiased w-full h-screen">
         @include('components.top-nav')
-        <div class="h-screen bg-gray-100 dark:bg-gray-900 min-w-full flex">
+        <div class="h-screen bg-gray-100 dark:bg-gray-900 min-w-full flex sticky top-0">
             @include('layouts.navigation')
 
             <!-- Page Content -->
