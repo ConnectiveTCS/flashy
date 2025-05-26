@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('topics', function (Blueprint $table) {
-            $table->id('topic_id');
-            $table->string('name')->unique()->comment('The name of the topic');
+            $table->id('id');
+            $table->string('name')->comment('The name of the topic');
             $table->text('description')->nullable()->comment('A brief description of the topic');
             $table->foreignId('user_id')
                   ->constrained('users')
