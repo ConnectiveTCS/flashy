@@ -18,12 +18,13 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900 flex">
+    <body class="font-sans antialiased w-full h-screen">
+        @include('components.top-nav')
+        <div class="h-screen bg-gray-100 dark:bg-gray-900 min-w-full flex">
             @include('layouts.navigation')
 
             <!-- Page Content -->
-            <main>
+            <main class="w-full">
                 {{ $slot }}
             </main>
         </div>
