@@ -31,7 +31,7 @@ class TopicFactory extends Factory
 
         return [
             //
-            'name' => $this->faker->randomElement($topics), // Randomly select a topic name from the predefined list
+            'name' => $this->faker->unique()->randomElement($topics), // Randomly select a topic name from the predefined list
             'user_id' => 1, // Assuming a default user ID for factory purposes
             'description' => $this->faker->sentence(),
         ];

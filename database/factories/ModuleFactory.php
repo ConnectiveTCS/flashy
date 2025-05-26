@@ -26,7 +26,8 @@ class ModuleFactory extends Factory
 
         return [
             //
-            'name' => $this->faker->randomElement($modules), // Randomly select a module name from the predefined list
+            // for each name in sequence, create a module with a random name from the list  
+            'name' => $this->faker->unique()->randomElement($modules),
             'user_id' => 1, // Assuming a default user ID for factory purposes
             'description' => $this->faker->sentence(),
         ];
