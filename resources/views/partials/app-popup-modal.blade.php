@@ -25,8 +25,8 @@
                 </select>
             </div>
             <div>
-                <label for="module_id">Topic:</label>
-                <select name="module_id" id="module_id" class="border border-gray-300 rounded p-2 w-full">
+                <label for="topic_id">Topic:</label>
+                <select name="topic_id" id="topic_id" class="border border-gray-300 rounded p-2 w-full">
                     <option value="">Select Topic</option>
                     @foreach ($topics->sortBy('name') as $topic)
                         <option value="{{ $topic->id }}">{{ $topic->name }}</option>

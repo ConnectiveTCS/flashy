@@ -17,7 +17,7 @@ class FlashcardController extends Controller
         $flashcards = Flashcard::all();
         $modules = \App\Models\Module::all();
         $topics = \App\Models\Topic::all();
-        return view('flashcards.index', compact('flashcards', 'modules', 'topics'));
+        return view('dashboard', compact('flashcards', 'modules', 'topics'));
     }
 
     /**
@@ -55,7 +55,7 @@ class FlashcardController extends Controller
         $flashcard->is_correct = $request->has('is_correct');
         $flashcard->is_incorrect = $request->has('is_incorrect');
         $flashcard->save();
-        dd($flashcard);
+        // dd($flashcard);
         return redirect()->back()->with('success', 'Flashcard created successfully.');
     }
 
@@ -112,6 +112,15 @@ class FlashcardController extends Controller
         //
         $flashcard->delete();
         return redirect()->back()->with('success', 'Flashcard deleted successfully.');
+    }
+
+    /**
+     * Delete all flashcards
+     */
+    public function deleteAll()
+    {
+        Flashcard::truncate();
+        return view('dashboard')->with('success', 'All flashcards deleted successfully.');
     }
 
     /**

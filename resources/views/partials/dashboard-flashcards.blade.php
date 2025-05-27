@@ -1,5 +1,7 @@
 <div class="hidden p-4 rounded-lg bg-white dark:bg-gray-800 overflow-y-clip" id="styled-flashcards" role="tabpanel"
     aria-labelledby="flashcards-tab">
+    <a href="{{ route('flashcards.deleteAll') }}" class=" w-fit block mb-2 text-sm font-medium text-white dark:text-white bg-red-900 hover:bg-red-700 rounded-md px-5 py-3 ml-auto hover:shadow-md">
+        Delete All</a>
     <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700 rounded h-3/5">
         <thead class="bg-gray-300 dark:bg-gray-700">
             <tr >

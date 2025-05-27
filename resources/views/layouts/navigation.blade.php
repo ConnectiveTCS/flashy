@@ -23,8 +23,7 @@
                 <li role="presentation">
                     <button
                         class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
-                        data-collapse-toggle="dropdown-example" data-tabs-target="#styled-flashcards" type="button"
-                        role="tab" aria-controls="flashcards" aria-selected="false">
+                        data-collapse-toggle="dropdown-example" type="button">
                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
                             xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
                             viewBox="0 0 24 24">
@@ -40,9 +39,11 @@
                     </button>
                     <ul id="dropdown-example" class="hidden py-2 space-y-2">
                         <li>
-                            <a href="#"
-                                class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">View
-                                Cards</a>
+                    <button
+                        class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700" 
+                        data-tabs-target="#styled-flashcards" type="button"
+                        role="tab" aria-controls="flashcards" aria-selected="false">
+                        View Cards</button>
                         </li>
                         <li>
                             <button data-modal-target="popup-modal" data-modal-toggle="popup-modal"
